@@ -133,7 +133,6 @@ C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\De
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\FitnessT.8E695E55.Up2Date
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\FitnessTracker.Backend.dll
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\refint\FitnessTracker.Backend.dll

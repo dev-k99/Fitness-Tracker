@@ -91,8 +91,8 @@ builder.Services.AddCors(options =>
         // For testing: Allow any origin temporarily (tighten later)
         policy.AllowAnyOrigin()
               .AllowAnyMethod()
-              .AllowAnyHeader()
-              .AllowCredentials();
+              .AllowAnyHeader();
+              
 
         // After Vercel deploy, replace with:
         // policy.WithOrigins("https://your-vercel-app-name.vercel.app")
@@ -136,8 +136,9 @@ app.MapGet("/", () => "Fitness Tracker API is running!");
 // Auto-migrate on startup (safe in production too, but only if needed)
 // WARNING: In production, consider running migrations manually or via CI/CD
 // For now, keep it but add try-catch
-using (var scope = app.Services.CreateScope())
+if (app.Environment.IsDevelopment())
 {
+    using var scope = app.Services.CreateScope();
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     try
     {
@@ -147,7 +148,6 @@ using (var scope = app.Services.CreateScope())
     catch (Exception ex)
     {
         Console.WriteLine($"Database migration failed: {ex.Message}");
-        // Optional: log to file or service, but don't crash the app
     }
 }
 
