@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|solutionrelative:appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|solutionrelative:services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|solutionrelative:appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\controllers\\workoutscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -117,25 +117,21 @@
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAJkAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T20:58:24.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -148,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -161,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Services\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IAuthService.cs",
@@ -169,12 +165,11 @@
               "RelativeToolTip": "Services\\Interfaces\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T20:32:33.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T20:32:33.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AuthDtos.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\DTOs\\Auth\\AuthDtos.cs",
               "RelativeDocumentMoniker": "DTOs\\Auth\\AuthDtos.cs",
@@ -182,12 +177,11 @@
               "RelativeToolTip": "DTOs\\Auth\\AuthDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T20:13:34.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T20:13:34.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "JwtHelper.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Helpers\\JwtHelper.cs",
               "RelativeDocumentMoniker": "Helpers\\JwtHelper.cs",
@@ -195,20 +189,20 @@
               "RelativeToolTip": "Helpers\\JwtHelper.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAA9wE4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T20:20:27.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T20:20:27.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\appsettings.Production.json",
               "RelativeDocumentMoniker": "appsettings.Production.json",
               "ToolTip": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\appsettings.Production.json",
               "RelativeToolTip": "appsettings.Production.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-16T20:54:13.116Z"
+              "WhenOpened": "2026-01-16T20:54:13.116Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -401,6 +395,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T20:05:12.921Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

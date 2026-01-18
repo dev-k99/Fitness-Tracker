@@ -140,3 +140,6 @@ C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\De
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\FitnessTracker.Backend.pdb
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\FitnessTracker.Backend.genruntimeconfig.cache
 C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\ref\FitnessTracker.Backend.dll
+C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\bin\Debug\net8.0\Npgsql.dll
+C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\kwanele\Documents\PROJECTS\FitnessTracker\FitnessTracker.Backend\obj\Debug\net8.0\FitnessTracker.Backend.sourcelink.json
