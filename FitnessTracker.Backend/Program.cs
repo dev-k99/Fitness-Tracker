@@ -113,15 +113,14 @@ builder.Services.AddScoped<IWorkoutService, WorkoutService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Fitness Tracker API v1");
         options.RoutePrefix = string.Empty; // Swagger at root
     });
-}
+
 
 // Global error handling middleware
 app.UseMiddleware<ErrorHandlingMiddleware>();
@@ -132,6 +131,9 @@ app.UseCors("AllowFrontend");
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapGet("/", () => "Fitness Tracker API is running!");
+
 
 app.MapControllers();
 
