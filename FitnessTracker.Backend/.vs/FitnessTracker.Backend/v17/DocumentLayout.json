@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|c:\\users\\kwanele\\documents\\projects\\fitnesstracker\\fitnesstracker.backend\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{DE6956B7-F450-4997-AA32-5BF45073E57C}|FitnessTracker.Backend.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -106,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -135,20 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T20:58:24.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -160,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -172,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Services\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IAuthService.cs",
@@ -184,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AuthDtos.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\DTOs\\Auth\\AuthDtos.cs",
               "RelativeDocumentMoniker": "DTOs\\Auth\\AuthDtos.cs",
@@ -196,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "JwtHelper.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Helpers\\JwtHelper.cs",
               "RelativeDocumentMoniker": "Helpers\\JwtHelper.cs",
@@ -208,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\appsettings.Production.json",
               "RelativeDocumentMoniker": "appsettings.Production.json",
@@ -220,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "20260116210447_NewMigration.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Migrations\\20260116210447_NewMigration.cs",
               "RelativeDocumentMoniker": "Migrations\\20260116210447_NewMigration.cs",
@@ -232,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "WorkoutsController.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Controllers\\WorkoutsController.cs",
               "RelativeDocumentMoniker": "Controllers\\WorkoutsController.cs",
@@ -244,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -256,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "ErrorHandlingMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Middleware\\ErrorHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\ErrorHandlingMiddleware.cs",
@@ -268,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "IWorkoutService.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Services\\Interfaces\\IWorkoutService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IWorkoutService.cs",
@@ -280,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "WorkoutService.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Services\\WorkoutService.cs",
               "RelativeDocumentMoniker": "Services\\WorkoutService.cs",
@@ -292,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -304,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "WorkoutRepository.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Repositories\\WorkoutRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\WorkoutRepository.cs",
@@ -316,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
@@ -328,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "IWorkoutRepository.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Repositories\\Interfaces\\IWorkoutRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IWorkoutRepository.cs",
@@ -340,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Repositories\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IUserRepository.cs",
@@ -352,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -364,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "WorkoutDtos.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\DTOs\\Workouts\\WorkoutDtos.cs",
               "RelativeDocumentMoniker": "DTOs\\Workouts\\WorkoutDtos.cs",
@@ -376,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "Exercise.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Models\\Exercise.cs",
               "RelativeDocumentMoniker": "Models\\Exercise.cs",
@@ -388,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Workout.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Models\\Workout.cs",
               "RelativeDocumentMoniker": "Models\\Workout.cs",
@@ -400,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\PROJECTS\\FitnessTracker\\FitnessTracker.Backend\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",

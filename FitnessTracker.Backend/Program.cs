@@ -27,12 +27,11 @@ builder.Services.AddSwaggerGen(options =>
         Description = "A production-ready fitness workout tracker API with JWT authentication",
         Contact = new OpenApiContact
         {
-            Name = "Your Name",
-            Email = "your.email@example.com"
+            Name = "Kwanele Ntshangase",
+            Email = "kwanelerh069@gmail.com"
         }
     });
 
-    // Add JWT Authentication to Swagger
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "JWT Authorization header using the Bearer scheme. Enter 'Bearer' [space] and then your token.",
@@ -58,52 +57,52 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-//Configure Database
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
+// Database (PostgreSQL for Render)
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configure JWT Authentication
+// JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 var secretKey = jwtSettings["SecretKey"] ?? throw new InvalidOperationException("JWT SecretKey not configured");
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = jwtSettings["Issuer"],
-        ValidAudience = jwtSettings["Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
-        ClockSkew = TimeSpan.Zero
-    };
-});
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtSettings["Issuer"],
+            ValidAudience = jwtSettings["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
+            ClockSkew = TimeSpan.Zero
+        };
+    });
 
 builder.Services.AddAuthorization();
 
-// Configure CORS
-var corsOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? Array.Empty<string>();
+// CORS - IMPORTANT: Make it flexible for Vercel
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins(corsOrigins)
+        // For testing: Allow any origin temporarily (tighten later)
+        policy.AllowAnyOrigin()
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials();
+
+        // After Vercel deploy, replace with:
+        // policy.WithOrigins("https://your-vercel-app-name.vercel.app")
+        //       .AllowAnyMethod()
+        //       .AllowAnyHeader()
+        //       .AllowCredentials();
     });
 });
 
-// Register Dependencies
+// Register services
 builder.Services.AddScoped<JwtHelper>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IWorkoutRepository, WorkoutRepository>();
@@ -112,37 +111,34 @@ builder.Services.AddScoped<IWorkoutService, WorkoutService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
+// HTTP pipeline
+// Enable Swagger in ALL environments (dev + prod) - very useful for testing
+app.UseSwagger();
+app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Fitness Tracker API v1");
+    options.RoutePrefix = string.Empty; // Makes Swagger appear at root: https://your-api.onrender.com/
+});
 
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Fitness Tracker API v1");
-        options.RoutePrefix = string.Empty; // Swagger at root
-    });
-
-
-// Global error handling middleware
+// Global error handling
 app.UseMiddleware<ErrorHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 
-app.UseCors("AllowFrontend");
+app.UseCors("AllowFrontend");  // Apply the policy
 
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Simple health check at root (helps Render verify the service is healthy)
 app.MapGet("/", () => "Fitness Tracker API is running!");
 
-
-app.MapControllers();
-
-// Auto-migrate database on startup (development only)
-if (app.Environment.IsDevelopment())
+// Auto-migrate on startup (safe in production too, but only if needed)
+// WARNING: In production, consider running migrations manually or via CI/CD
+// For now, keep it but add try-catch
+using (var scope = app.Services.CreateScope())
 {
-    using var scope = app.Services.CreateScope();
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-
     try
     {
         dbContext.Database.Migrate();
@@ -151,7 +147,10 @@ if (app.Environment.IsDevelopment())
     catch (Exception ex)
     {
         Console.WriteLine($"Database migration failed: {ex.Message}");
+        // Optional: log to file or service, but don't crash the app
     }
 }
+
+app.MapControllers();
 
 app.Run();
