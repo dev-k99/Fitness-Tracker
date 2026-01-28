@@ -71,7 +71,7 @@ const Register: React.FC = () => {
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                placeholder="John"
+                placeholder="Kwanele"
                 required
                 disabled={isLoading}
               />
@@ -84,7 +84,7 @@ const Register: React.FC = () => {
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                placeholder="Doe"
+                placeholder="Ntshangase"
                 required
                 disabled={isLoading}
               />

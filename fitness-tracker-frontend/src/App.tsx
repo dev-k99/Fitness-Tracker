@@ -1,54 +1,45 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './auth/AuthContext';
-import PrivateRoute from './auth/PrivateRoute';
-import Layout from './components/Layout/Layout';
+import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import CreateWorkout from './pages/CreateWorkout';
-import EditWorkout from './pages/EditWorkout';
 import './App.css';
 
 const App: React.FC = () => {
   return (
     <AuthProvider>
       <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Navigate to="/dashboard" replace />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route
-              path="/dashboard"
-              element={
-                <PrivateRoute>
-                  <Dashboard />
-                </PrivateRoute>
-              }
-            />
-            <Route
-              path="/create-workout"
-              element={
-                <PrivateRoute>
-                  <CreateWorkout />
-                </PrivateRoute>
-              }
-            />
-            <Route
-              path="/edit-workout/:id"
-              element={
-                <PrivateRoute>
-                  <EditWorkout />
-                </PrivateRoute>
-              }
-            />
-            <Route path="*" element={<Navigate to="/dashboard" replace />} />
-          </Routes>
-        </Layout>
+        <Routes>
+          {/* Public Routes */}
+          <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+
+          {/* Protected Routes */}
+          <Route 
+            path="/dashboard" 
+            element={<ProtectedRoute><Dashboard /></ProtectedRoute>} 
+          />
+          <Route 
+            path="/create-workout" 
+            element={<ProtectedRoute><CreateWorkout /></ProtectedRoute>} 
+          />
+
+          {/* Fallback Route */}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </Router>
     </AuthProvider>
   );
+};
+
+// Protected Route Component
+const ProtectedRoute: React.FC<{ children: React.ReactElement }> = ({ children }) => {
+  const isAuthenticated = !!localStorage.getItem('token');
+  return isAuthenticated ? children : <Navigate to="/login" replace />;
 };
 
 export default App;
