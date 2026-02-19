@@ -1,4 +1,7 @@
-node_modules\
-*.env
-.env.development
+# dependencies
+node_modules/
+
+# environment files
+.env
 .env.production
+.env.development
