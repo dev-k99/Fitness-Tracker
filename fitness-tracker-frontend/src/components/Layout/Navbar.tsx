@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
-          💪 Fitness Tracker
+           Fitness Tracker
         </Link>
 
         <div className="navbar-menu">
