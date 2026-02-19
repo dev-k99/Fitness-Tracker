@@ -27,7 +27,7 @@ const Landing: React.FC = () => {
             </p>
             <div className="hero-cta">
               <Link to="/register" className="btn btn-primary btn-large">
-                Start Free Today 🚀
+                Start Free Today 
               </Link>
               <Link to="/login" className="btn btn-secondary btn-large">
                 Sign In
@@ -80,37 +80,37 @@ const Landing: React.FC = () => {
 
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">📊</div>
+              <div className="feature-icon"></div>
               <h3>Smart Tracking</h3>
               <p>Log every rep, set, and weight with our intuitive interface. Track your progress over time.</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">📈</div>
+              <div className="feature-icon"></div>
               <h3>Progress Analytics</h3>
               <p>Visualize your gains with detailed charts and statistics. See how far you've come.</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">🎯</div>
+              <div className="feature-icon"></div>
               <h3>Goal Setting</h3>
               <p>Set ambitious goals and track your journey. Stay motivated with milestone celebrations.</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">⚡</div>
+              <div className="feature-icon"></div>
               <h3>Quick Logging</h3>
               <p>Add workouts in seconds. No complicated forms or unnecessary steps.</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">🔒</div>
+              <div className="feature-icon"></div>
               <h3>Secure & Private</h3>
               <p>Your data is encrypted and private. We never share your information.</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">📱</div>
+              <div className="feature-icon"></div>
               <h3>Mobile Friendly</h3>
               <p>Access from any device. Seamless experience on phone, tablet, or desktop.</p>
             </div>
@@ -171,7 +171,7 @@ const Landing: React.FC = () => {
                 "This app completely changed how I track my workouts. Simple, fast, and effective!"
               </p>
               <div className="testimonial-author">
-                <div className="author-avatar">💪</div>
+                <div className="author-avatar"></div>
                 <div>
                   <div className="author-name">Sarah Johnson</div>
                   <div className="author-title">Powerlifter</div>
@@ -185,7 +185,7 @@ const Landing: React.FC = () => {
                 "Finally, a workout tracker that doesn't overcomplicate things. Love the clean interface!"
               </p>
               <div className="testimonial-author">
-                <div className="author-avatar">🏋️</div>
+                <div className="author-avatar"></div>
                 <div>
                   <div className="author-name">Mike Chen</div>
                   <div className="author-title">Bodybuilder</div>
@@ -199,7 +199,7 @@ const Landing: React.FC = () => {
                 "The progress tracking is amazing. Seeing my gains visualized keeps me motivated!"
               </p>
               <div className="testimonial-author">
-                <div className="author-avatar">🔥</div>
+                <div className="author-avatar"></div>
                 <div>
                   <div className="author-name">Emily Rodriguez</div>
                   <div className="author-title">CrossFit Athlete</div>
@@ -221,7 +221,7 @@ const Landing: React.FC = () => {
               Join thousands of users who are crushing their fitness goals
             </p>
             <Link to="/register" className="btn btn-primary btn-xlarge">
-              Get Started Free 🚀
+              Get Started Free 
             </Link>
             <p className="cta-note">No credit card required • Start tracking in 30 seconds</p>
           </div>
@@ -234,7 +234,7 @@ const Landing: React.FC = () => {
           <div className="footer-content">
             <div className="footer-brand">
               <div className="footer-logo">
-                <span className="logo-icon">💪</span>
+                <span className="logo-icon"></span>
                 <span className="logo-text">Fitness Tracker</span>
               </div>
               <p>Transform your body, transform your life.</p>
