@@ -44,7 +44,7 @@ const Dashboard: React.FC = () => {
     <div className="dashboard-container">
       <div className="dashboard-header">
         <div>
-          <h1>Welcome back, {user?.firstName}! 💪</h1>
+          <h1>Welcome back, {user?.firstName}! </h1>
           <p className="dashboard-subtitle">Track your progress and crush your fitness goals</p>
         </div>
         <button className="btn-primary" onClick={() => navigate('/create-workout')}>
@@ -56,7 +56,7 @@ const Dashboard: React.FC = () => {
 
       {workouts.length === 0 ? (
         <div className="empty-state">
-          <div className="empty-state-icon">🏋️</div>
+          <div className="empty-state-icon"></div>
           <h2>No workouts yet</h2>
           <p>Start your fitness journey by creating your first workout!</p>
           <button className="btn-primary" onClick={() => navigate('/create-workout')}>
