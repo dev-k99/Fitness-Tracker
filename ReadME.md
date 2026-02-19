@@ -1,4 +1,4 @@
-# 💪 Fitness Workout Tracker
+# Fitness Workout Tracker
 
 A production-ready full-stack fitness tracking application built with ASP.NET Core 8 and React TypeScript.
 
@@ -81,7 +81,7 @@ FitnessTracker/
 └── docker-compose.yml        # Multi-container setup
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - .NET 8 SDK
