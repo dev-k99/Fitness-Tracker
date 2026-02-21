@@ -5,3 +5,7 @@ node_modules/
 .env
 .env.production
 .env.development
+
+FitnessTracker.Backend\appsettings.Development.json
+FitnessTracker.Backend\appsettings.json
+FitnessTracker.Backend\appsettings.Production.json
